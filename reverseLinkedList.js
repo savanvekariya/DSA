@@ -1,4 +1,4 @@
-var reverseList = function(head) {
+var reverseLinkedList = function(head) {
     let prev = null
     let curr = head
     while(curr != null){
