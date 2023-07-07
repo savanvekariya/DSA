@@ -19,7 +19,7 @@ function reverseString3(inputString) {
     return inputString.split('').reduce((prev, curr) => {
         // console.log('prev-> ', prev)
         // console.log('curr-> ', curr)
-        return prev + curr
+        return  curr + prev
     })
 }
 console.log(reverseString3('hello'))
