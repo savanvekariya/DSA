@@ -31,3 +31,12 @@ function isAnagram2(inputString1, inputString2) {
     return true
 }
 console.log(isAnagram2('abbc', 'bbca'))
+
+function isAnagram3(str1, str2){
+    let sortedstr1 = str1.toLowerCase().split('').sort().join('');
+    let sortedstr2 = str2.toLowerCase().split('').sort().join('');
+
+    return sortedstr1 == sortedstr2;
+}
+
+console.log(isAnagram3('race', 'careg'));
