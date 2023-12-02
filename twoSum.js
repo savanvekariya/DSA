@@ -11,12 +11,14 @@ const findPair = (numArr, sum) => {
 };
 
 const findPair1 = (numArr, sum) => {
-  const result = new Map();
-  for (let item in numArr) {
-    let item2 = sum - Number(item);
-    if (numArr.indexOf(item2) !== -1) {
-      result.set(item, item2);
+  let hashTable = {};
+  let result = [];
+  for (let item of numArr) {
+    let counter = sum - item;
+    if (hashTable[counter] !== undefined) {
+      result.push([item, counter]);
     }
+    hashTable[item] = item;
   }
   console.log(result);
 };
