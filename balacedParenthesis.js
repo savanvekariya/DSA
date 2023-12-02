@@ -14,4 +14,4 @@ function isParenthesisBalanced(inputString){
     return stack.length ? false : true
 }
 
-console.log(isParenthesisBalanced('(}'))
+console.log(isParenthesisBalanced('(((())))'))
